@@ -1,0 +1,31 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, forest;
+}
+
+:global(body),
+:global(html) {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+:global(body) {
+  padding-top: 32px;
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    rgba(5, 46, 22, 0.03) 0%,
+    rgba(6, 78, 59, 0.02) 50%,
+    rgba(3, 255, 108, 0.03) 100%
+  );
+}
+main {
+  padding: 10px;
+  height: calc(100vh - 32px);
+  box-sizing: border-box;
+  overflow-y: auto;
+}
